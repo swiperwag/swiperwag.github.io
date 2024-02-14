@@ -14,23 +14,12 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 100dvh;
-  animation: proConanim 2s ease-out;
 }
 body {
   background-color: #161b22;
   overflow: hidden;
 }
-@keyframes proConanim {
-  0% {
-    filter:brightness(0);
-  }
-  80% {
-    filter:brightness(2);
-  }
-  100% {
-    filter:brightness(1);
-  }
-}
+
 header {
   z-index: 2;
 }
@@ -51,7 +40,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  animation: h1anim 3s;
 }
 .navbar__me h1 {
   font-family: "Caveat", cursive;
@@ -61,17 +49,6 @@ header {
   color: white;
 
 }
-
-@keyframes h1anim {
-  0% {
-    filter: blur(10px);
-  }
-  100% {
-    filter: blur(0);
-  }
-}
-
-
 
 .navbar__links {
   height: 25px;
@@ -101,11 +78,27 @@ header {
   overflow: hidden;
   border: none;
   border-radius: 5px;
+  animation: meanim 1s ease-in-out;
+  animation-delay: .5s;
+  position: relative;
+  box-shadow: none;
+  transition: box-shadow 1s;
 }
 .project__container:hover {
-  border-radius: 10px;
+  box-shadow: 0 0 250px 10px rgba(255, 255, 255, 0.209);
 }
 
+
+
+@keyframes meanim {
+  0% {
+    position: absolute;
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
 
 
 /* this makes the whole thing have border when hovered 
@@ -159,6 +152,7 @@ header {
   display: flex;
 }
 
+
 .blur {
   position: absolute;
   animation: bluranimation 5s infinite alternate;
@@ -177,12 +171,19 @@ header {
 }
 
 
-
 footer {
   display: flex;
   justify-content: center;
   border-top: 1px solid rgba(0, 0, 0, 0.259);
 }
+footer:hover {
+  color: rgb(145, 145, 145);
+}
+
+
+
+
+
 
 #nolink {
   cursor:unset;
@@ -219,4 +220,26 @@ footer {
     max-width: 100%;
   }
 
+}
+.intro {
+  position: absolute;
+  background-color: rgb(19, 22, 24);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  color: white;
+  animation: introanim 1.5s;
+}
+@keyframes introanim {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
