@@ -14,7 +14,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 100dvh;
-  animation: proConanim 1s ease-out;
+  animation: proConanim 2s ease-out;
 }
 body {
   background-color: #161b22;
@@ -51,6 +51,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
+  animation: h1anim 3s;
 }
 .navbar__me h1 {
   font-family: "Caveat", cursive;
@@ -58,6 +59,16 @@ header {
   font-style: normal;
   font-size: inherit;
   color: white;
+
+}
+
+@keyframes h1anim {
+  0% {
+    filter: blur(10px);
+  }
+  100% {
+    filter: blur(0);
+  }
 }
 
 
@@ -126,6 +137,9 @@ header {
   font-size: 16px ;
   color: rgb(246, 246, 246);
 }
+
+
+
 
 .project__container__info h2, h3, h4  {
   font-size: 12px;
