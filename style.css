@@ -88,6 +88,21 @@ header {
   box-shadow: 0 0 250px 10px rgba(255, 255, 255, 0.209);
 }
 
+.navbar__links {
+  overflow: visible;
+}
+.navbar__links a {
+  background-color: none ;
+  box-shadow: none;
+  transition: all .15s;
+}
+
+
+.navbar__links a:hover {
+  background-color: rgba(255, 255, 255, 0.363);
+  box-shadow: 0 0 50px 10px rgb(255, 255, 255);
+}
+
 
 
 @keyframes meanim {
