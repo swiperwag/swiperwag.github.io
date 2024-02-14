@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Lexend:wght@200&family=Philosopher&family=Protest+Strike&display=swap');
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100dvh;
+}
+header {
+  z-index: 2;
+  box-shadow: 0px 0 2px rgb(0, 0, 0);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+
+.navbar__logo {
+  font-size: 26px;
+}
+
+.navbar__links {
+  height: 25px;
+  overflow: hidden;
+  display: flex;
+  gap: 10px;
+}
+.navbar__logo h1 {
+  font-family: 'Protest Strike', sans-serif;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 20px;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 1;
+  background-color: rgb(240, 240, 240);
+}
+
+.project__container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  overflow: hidden;
+  border: none;
+}
+.project__container:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+/* this makes the whole thing have border when hovered 
+.project__container :hover {
+  border: 1px solid rgb(255, 0, 0);
+  transition: all .15s;
+  /* transform: translate(5px, -5px); */
+  /* box-shadow: -5px 5px black;  
+}  
+*/
+.project__container a {
+  color: black;
+  text-decoration: unset;
+}
+
+.project__container__info {
+  max-height: 0;
+  transition: max-height .5s ease-in-out; /* Transition max-height property */
+  padding: 0 10px;
+}
+
+.project__container:hover .project__container__info {
+  max-height: 1000px; /* Set to a sufficiently large value */
+}
+
+.project__container__info h1  {
+  font-size: 16px ;
+}
+
+.project__container__info h2, h3, h4  {
+  font-size: 12px;
+}
+
+.project__language img {
+  height: 35px;
+
+}
+.project__container__img video, .project__container__img img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project__container__img {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.259);
+}
+
+#nolink {
+  cursor:unset;
+}
+
+@media (max-width: 710px) {
+  .navbar__logo {
+    display: none;
+  }
+  .project__container__info {
+    max-width: 300px;
+    max-height:500px;
+    position: unset;
+  }
+  .navbar__me h1 {
+    font-size: 16px ;
+  }
+  .project__container__info h1  {
+    font-size: 16px ;
+  }
+  .navbar__links {
+    height: 15px;
+  }
+  .navbar__links svg {
+    height: 15px;
+  }
+  .navbar {
+    display: flex;
+  }
+  .project__container {
+    overflow-x: scroll;
+  }
+  .project__container__img video  .project__container__img video  {
+    max-width: 100%;
+  }
+
+}
