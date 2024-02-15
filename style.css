@@ -242,7 +242,6 @@ footer:hover {
   height: 100%;
   width: 100%;
   z-index: 10;
-  display: grid;
   place-items: center;
   color: white;
   animation: introanim 1.5s;
