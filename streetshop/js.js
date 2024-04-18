@@ -27,8 +27,10 @@ const navbarLinks4 = document.getElementById('collections');
 const navbarLinks5 = document.getElementById('drop');
 const navbarLinks6 = document.getElementById('sale');
 const navbarSearch = document.getElementById('search')
+const sbtext = document.querySelector('.sb-text')
 const navbarUser = document.getElementById('user');
 const navbarCart = document.getElementById('cart');
+
 
 
 // Get the men-dropdown element
@@ -140,10 +142,7 @@ navbarSearch.addEventListener('mouseenter' , function() {
   navbarCart.style.borderBottom = 'none';
   navbarSearch.style.borderBottom = '0.5px solid black';
   searchDropdown.style.display = 'flex';
-  const inputElement = searchDropdown.querySelector('input[type="text"]');
-  if (inputElement) {
-    inputElement.focus(); // Set focus to the input element
-  }
+  sbtext.focus()
 
 });
 
