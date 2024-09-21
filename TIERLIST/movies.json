@@ -1,0 +1,19 @@
+{
+  "movies": [
+    {
+      "name": "Breaking bad",
+      "rating": "9.7/10",
+      "date": "- -, 2023"
+    },
+    {
+      "name": "Death note",
+      "rating": "9.7/10",
+      "date": "- -, 2023"
+    },
+    {
+      "name": "How to make million before grandma dies",
+      "rating": "7.5/10",
+      "date": "Sep 21, 2024"
+    }
+  ]
+}
