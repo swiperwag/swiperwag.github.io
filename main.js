@@ -14,10 +14,6 @@ fetch('movies.json')
       const movieDiv = document.createElement('div');
       movieDiv.classList.add('movie');
       
-      const comment = document.createElement('div');
-      comment.classList.add('comment');
-      comment.innerText = movie.comment;
-     
       const movieName = document.createElement('div');
       movieName.classList.add('movie-name');
       movieName.innerText = movie.name;
@@ -29,11 +25,8 @@ fetch('movies.json')
       const date = document.createElement('div');
       date.classList.add('date');
       date.innerText = movie.date;
-
-      
       
       movieDiv.appendChild(movieName);
-      movieDiv.appendChild(comment);
       movieDiv.appendChild(rating);
       movieDiv.appendChild(date);
       
@@ -43,6 +36,3 @@ fetch('movies.json')
   .catch(error => {
     console.error('Error loading the movies:', error);
   });
-
-
-  
