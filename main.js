@@ -17,6 +17,10 @@ fetch('movies.json')
       const movieName = document.createElement('div');
       movieName.classList.add('movie-name');
       movieName.innerText = movie.name;
+
+      const movieComment = document.createElement('div');
+      movieComment.classList.add('movie-comment');
+      movieComment.innerText = movie.comment;
       
       const rating = document.createElement('div');
       rating.classList.add('rating');
@@ -27,6 +31,7 @@ fetch('movies.json')
       date.innerText = movie.date;
       
       movieDiv.appendChild(movieName);
+      movieDiv.appendChild(movieComment);
       movieDiv.appendChild(rating);
       movieDiv.appendChild(date);
       

@@ -23,13 +23,27 @@ body{
 .type{
   margin-bottom: 10px;
 }
-.movie{
+.movie, .type{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 200px 200px;
   grid-template-rows: auto;
   gap: 10px;
+  cursor: pointer;
 }
-.type{
-  display: flex;
-  justify-content: space-between;
+
+.movie-comment{
+  color: white;
+  background: #121212;
+  position: absolute;
+  width: 400px;
+  display: none;
+  margin-top: 20px;
+  padding: 5px;
+}
+.movie-name:hover + .movie-comment{
+  display: block;
+}
+.movie-name:hover{
+  color: green;
+  font-weight: bold;
 }
