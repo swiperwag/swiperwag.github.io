@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Lexend:wght@200&family=Philosopher&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Strike&family=Sanchez&display=swap');
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100dvh;
+}
+body {
+  background-color: #161b22;
+  overflow: hidden;
+}
+
+header {
+  z-index: 2;
+}
+
+::-webkit-scrollbar {
+  background-color: #26282a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #26282a ;
+}
+::-webkit-scrollbar-track{
+  background-color: #161b22;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+.navbar__me h1 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: inherit;
+  color: white;
+
+}
+
+.navbar__links {
+  height: 25px;
+  overflow: hidden;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 20px;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.project__container {
+  background-color: #202428;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  overflow: hidden;
+  border: none;
+  border-radius: 5px;
+  animation: meanim 1s ease-in-out;
+  animation-delay: .5s;
+  position: relative;
+  box-shadow: none;
+  transition: box-shadow 1s;
+}
+.project__container:hover {
+  box-shadow: 0 0 250px 10px rgba(255, 255, 255, 0.209);
+}
+
+.navbar__links {
+  overflow: visible;
+}
+.navbar__links a {
+  background-color: none ;
+  box-shadow: none;
+  transition: all .15s;
+}
+
+
+.navbar__links a:hover {
+  background-color: rgba(255, 255, 255, 0.363);
+  box-shadow: 0 0 50px 10px rgb(255, 255, 255);
+}
+
+
+
+@keyframes meanim {
+  0% {
+    position: absolute;
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+
+/* this makes the whole thing have border when hovered 
+.project__container :hover {
+  border: 1px solid rgb(255, 0, 0);
+  transition: all .15s;
+  /* transform: translate(5px, -5px); */
+  /* box-shadow: -5px 5px black;  
+}  
+*/
+.project__container a {
+  color: black;
+  text-decoration: unset;
+}
+
+.project__container__info {
+  max-height: 0;
+  transition: max-height .5s ease-in-out; /* Transition max-height property */
+  padding: 0 10px;
+  color: rgb(174, 174, 174);
+  font-weight: 400;
+}
+
+.project__container:hover .project__container__info {
+  max-height: 1000px; /* Set to a sufficiently large value */
+}
+
+.project__container__info h1  {
+  font-size: 16px ;
+  color: rgb(246, 246, 246);
+}
+
+
+
+
+.project__container__info h2, h3, h4  {
+  font-size: 12px;
+}
+
+.project__language img {
+  height: 35px;
+
+}
+.project__container__img video, .project__container__img img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project__container__img {
+  display: flex;
+}
+
+
+.blur {
+  position: absolute;
+  animation: bluranimation 5s infinite alternate;
+  box-shadow: 0 0 1000px 100px rgba(255, 255, 255, 0.063);
+  bottom: 0;
+  right: 50%;
+  opacity: .5;
+}
+@keyframes bluranimation {
+  0% {
+    box-shadow: 0 0 1000px 100px rgba(255, 255, 255, 0.063);
+  }
+  100% {
+    box-shadow: 0 0 800px 80px rgba(255, 255, 255, 0.063);
+  }
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.259);
+}
+footer:hover {
+  color: rgb(145, 145, 145);
+}
+
+
+
+
+
+
+#nolink {
+  cursor:unset;
+}
+
+@media (max-width: 710px) {
+  .navbar__logo {
+    display: none;
+  }
+  .project__container__info {
+    max-width: 300px;
+    max-height:500px;
+    position: unset;
+  }
+  .navbar__me h1 {
+    font-size: 16px ;
+  }
+  .project__container__info h1  {
+    font-size: 16px ;
+  }
+  .navbar__links {
+    height: 15px;
+  }
+  .navbar__links svg {
+    height: 15px;
+  }
+  .navbar {
+    display: flex;
+  }
+  .project__container {
+    overflow-x: scroll;
+  }
+  .project__container__img video  .project__container__img video  {
+    max-width: 100%;
+  }
+
+}
+.intro {
+  position: absolute;
+  background-color: rgb(19, 22, 24);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  place-items: center;
+  color: white;
+  animation: introanim 1.5s;
+}
+.h1__container {
+  height: 48px;
+  overflow: hidden;
+}
+.h1__container h1{
+  margin-top: 0;
+  animation: h1anim .5s;
+}
+@keyframes h1anim {
+  0%{
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+@keyframes introanim {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
