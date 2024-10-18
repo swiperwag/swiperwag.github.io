@@ -1,0 +1,83 @@
+{
+  "movies": [
+    {
+      "name": "Breaking bad",
+      "comment": "The movie series give great reasons on how they got through tough situations they gave a great probable cause and not just cut the scenes and move on.",
+      "rating": "9.7/10",
+      "date": "- -, 2023"
+    },
+    {
+      "name": "Death note",
+      "comment": "The goat psychological anime, this is the movie that made me hook to psychological genre and anime",
+      "rating": "9.7/10",
+      "date": "- -, 2023"
+    },
+    {
+      "name": "Hunter x hunter",
+      "comment": "First ever anime to finished in tagalog then rewatched it later on.",
+      "rating": "9.7/10",
+      "date": "- -, 2021"
+    },
+    {
+      "name": "How to make million before grandma dies",
+      "comment": "Almost made me cry",
+      "rating": "8.5/10",
+      "date": "Sep 21, 2024"
+    },
+    {
+      "name": "The banker",
+      "comment": "This movie open my eyes that its not luck its years of experience and dedication that trive in the long run. And Racism before was outrageous",
+      "rating": "9/10",
+      "date": "Sep 21, 2024"
+    },
+    {
+      "name": "Matrix",
+      "comment": "The explanation about the simulation is cool and actually beliveable",
+      "rating": "9.8/10",
+      "date": "Sep 22, 2024"
+    },
+    {
+      "name": "Heavenly delusion",
+      "comment": "This movie is fun to watch",
+      "rating": "9.7/10",
+      "date": "Sep 24, 2024"
+    }
+    ,
+    {
+      "name": "13 cameras",
+      "comment": "Not well reasoned especially in the end. they just cut it like nothing happened and move on",
+      "rating": "6/10",
+      "date": "Oct 9, 2024"
+    },
+    {
+      "name": "Classroom of elite",
+      "comment": "Actually smart but also not cause some of the activities are easy to exploit if you just take time to think.",
+      "rating": "8/10",
+      "date": "Oct 13, 2024"
+    },
+    {
+      "name": "Chainsaw man",
+      "comment": "This anime its not corny cause they actually kill important people like in naruto",
+      "rating": "9.5/10",
+      "date": "Oct 14, 2024"
+    },
+    {
+      "name": "No more bets",
+      "comment": "real life story great depiction of what happened and im jealouse about china police now bro they are smart.",
+      "rating": "9/10",
+      "date": "Oct 18, 2024"
+    },
+    {
+      "name": "Burning",
+      "comment": "I love this movie now i wanna watch more romance drama of south korea movies.",
+      "rating": "9.5/10",
+      "date": "Oct 18, 2024"
+    },
+    {
+      "name": "The first lap",
+      "comment": "This movie is just chill for me i like it perosonally but i dont think everyone would like it as i do.",
+      "rating": "9.5/10",
+      "date": "- -, 2023"
+    }    
+  ]
+}
