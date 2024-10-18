@@ -1,0 +1,668 @@
+<!--
+  JAN 27, 2024 (started)
+  FEB 8, 2024 (finished)
+  HTML 
+  CSS
+  JAVASCRIPT
+  
+  In this website im gonna copy a behance website design.
+  the aim of project is to learn:
+  - LAYOUT/RESPONSIVENESS
+  - BEM NAMING STYLE
+
+
+https://www.behance.net/gallery/149888453/STREATSHOP-Streetwear-Design?tracking_source=search_projects%7Cwebsite
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clothing design no.2</title>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;500;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="content">
+
+      <div class="dropdown-menus">
+      <div class="navbar">
+        <div class="navbar__logo">
+          <img src="images//official-logo.webp" alt="navbar-logo">
+        </div>
+        <div class="navbar__links">
+          <a href="#" class="navbar-links-a" id="men">Men</a>
+          <a href="#" class="navbar-links-a" id="women">Women</a>
+          <a href="#" class="navbar-links-a" id="collections">Collections</a>
+          <a href="#" class="navbar-links-a" id="drop">Drop</a>
+          <a href="#" class="navbar-links-a" id="sale">Sale</a>
+        </div>
+        <div class="navbar__svg">
+          <a class="navbar-svg-img" id="search" href="#">
+            <svg width="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="navbar-svg-img user" id="user" href="#">
+            <svg width="35px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+          <a class="navbar-svg-img" id="cart" href="#">
+            <svg width="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="navbar__svg-menu" href="#">
+            <svg width="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+      </div>
+      </div>
+      <div class="men-dropdown">
+        <div class="baragusbal">
+          <div class="oinasdjaslmadn">
+            <a href="">
+              <h1>WE RECOMMEND</h1>
+            </a>
+            <a href="">Nike</a>
+            <a href="">Adidas</a>
+            <a href="">Jordan</a>
+            <a href="">Supreme</a>
+            <a href="">Off - White</a>
+            <a href="">The North Face</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>SHOES</h1>
+            <a href="">All shoes</a>
+            <a href="">Lifestyle</a>
+            <a href="">Sneakers</a>
+            <a href="">Running</a>
+            <a href="">Basketball</a>
+            <a href="">Shoes Under 50$</a>
+            <a href="">Sale</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <a href="">
+              <h1>CLOTHES</h1>
+            </a>
+            <a href="">All clothes</a>
+            <a href="">T-shirts</a>
+            <a href="">Sweatshirts</a>
+            <a href="">Shorts</a>
+            <a href="">Pants</a>
+            <a href="">Tracksuits</a>
+            <a href="">Jackets</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>ACCESSORIES</h1>
+            <a href="">Socks</a>
+            <a href="">Underwear</a>
+            <a href="">Headwear</a>
+            <a href="">Bags And Backpacks</a>
+            <a href="">Sunglasses</a>
+            <a href="">Footwear Care</a>
+          </div>
+        </div>
+          <div class="baragastik">
+            <div class="baragastik-container">
+              <img src="images//drop-img4.jpg" id="shoe-vans" alt="Exploretheworld">
+              <a href="">EXPLORE THE WORLD</a>
+            </div>
+            <div class="baragastik-container">
+              <img src="images//vans-guy.jpg" alt="of adidas">
+              <a href="">OF ADIDAS</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="women-dropdown">
+        <div class="baragusbal">
+          <div class="oinasdjaslmadn">
+            <h1>WE RECOMMEND</h1>
+            <a href="">Nike</a>
+            <a href="">Adidas</a>
+            <a href="">Jordan</a>
+            <a href="">Supreme</a>
+            <a href="">Off - White</a>
+            <a href="">The North Face</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>SHOES</h1>
+            <a href="">All shoes</a>
+            <a href="">Lifestyle</a>
+            <a href="">Sneakers</a>
+            <a href="">Running</a>
+            <a href="">Basketball</a>
+            <a href="">Shoes Under 50$</a>
+            <a href="">Sale</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>CLOTHES</h1>
+            <a href="">All clothes</a>
+            <a href="">T-shirts</a>
+            <a href="">Sweatshirts</a>
+            <a href="">Shorts</a>
+            <a href="">Pants</a>
+            <a href="">Tracksuits</a>
+            <a href="">Jackets</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>ACCESSORIES</h1>
+            <a href="">Socks</a>
+            <a href="">Underwear</a>
+            <a href="">Headwear</a>
+            <a href="">Bags And Backpacks</a>
+            <a href="">Sunglasses</a>
+            <a href="">Footwear Care</a>
+          </div>
+        </div>
+         <div class="baragastik">
+            <div class="baragastik-container">
+              <img src="images//vans-shoe.jpg" id="shoe-vans" alt="Exploretheworld">
+              <a href="">EXPLORE THE WORLD</a>
+            </div>
+            <div class="baragastik-container">
+              <img src="images//vans-guy2.jpg" alt="of adidas">
+              <a href="">OF NIKE</a>
+            </div>
+          </div>
+      </div>
+      
+      <div class="collections-dropdown">
+        <div class="baragusbal">
+          <div class="oinasdjaslmadn">
+            <h1>SEASONAL</h1>
+            <a href="">Spring Collection</a>
+            <a href="">Summer Collection</a>
+            <a href="">Fall Collection</a>
+            <a href="">Winter Collection</a>
+            <a href="">Holiday Collection</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>LIMITED EDITION</h1>
+            <a href="">Exclusive Designs</a>
+            <a href="">Limited Quantity Releases</a>
+            <a href="">Special Edition Collaborations</a>
+            <a href="">Anniversary Collections</a>
+            <a href="">Signature Series</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>COLLABORATION</h1>
+            <a href="">NeoTech Fusion Collection</a>
+            <a href="">Urban Edge Series</a>
+            <a href="">Velocity Vanguard</a>
+            <a href="">Street Chic Series</a>
+            <a href="">Prime Pursuit</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>CLASSIC</h1>
+            <a href="">Timeless Pieces</a>
+            <a href="">Wardrobe Staples</a>
+            <a href="">Essential Basics</a>
+            <a href="">Iconic Designs</a>
+            <a href="">Heritage Collection</a>
+          </div>
+        </div>
+
+        <div class="baragastik">
+          <div class="baragastik-container">
+            <img src="images//vans-guy3.jpg" alt="Exploretheworld">
+            <a href="">Iconic Designs</a>
+          </div>
+          <div class="baragastik-container">
+            <img src="images//vans-guy4.jpg" alt="of adidas">
+            <a href="">Wardrobe Staples</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="drop-dropdown">
+        <div class="baragusbal">
+          <div class="oinasdjaslmadn">
+            <h1>NEW ARRIVALS</h1>
+            <a href="">Latest Releases</a>
+            <a href="">New Styles</a>
+            <a href="">Fresh Arrivals</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>EXCLUSIVE RELEASES</h1>
+            <a href="">Limited Editions</a>
+            <a href="">Exclusive Drops</a>
+            <a href="">Special Releases</a>
+            <a href="">Collector's Editions</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>PRE-ORDERS</h1>
+            <a href="">Early Access</a>
+            <a href="">Be the First to Get It</a>
+            <a href="">Pre-Release Exclusives</a>
+            <a href="">Reserve Your Pair</a>
+            <a href="">Upcoming Releases</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>SNEAKER DROPS</h1>
+            <a href="">Hot Releases</a>
+            <a href="">Sneaker Launches</a>
+            <a href="">Must-Have Styles</a>
+          </div>
+         </div>
+
+         <div class="baragastik">
+          <div class="baragastik-container">
+            <img src="images//drop-img.jpg" alt="Exploretheworld">
+            <a href="">Exclusive Drops</a>
+          </div>
+          <div class="baragastik-container">
+            <img src="images//drop-img3.jpg" alt="of adidas">
+            <a href="">Hot Releases</a>
+          </div>
+        </div>
+
+      </div>
+
+      
+      <div class="sale-dropdown">
+        <div class="baragusbal">
+          <div class="oinasdjaslmadn">
+            <h1>DISCOUNTED CATEGORIES</h1>
+            <a href="">Nike</a>
+            <a href="">Adidas</a>
+            <a href="">Jordan</a>
+            <a href="">Supreme</a>
+            <a href="">Off - White</a>
+            <a href="">The North Face</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>LAST CHANCE</h1>
+            <a href="">All shoes</a>
+            <a href="">Lifestyle</a>
+            <a href="">Sneakersy</a>
+            <a href="">Running</a>
+            <a href="">Basketball</a>
+            <a href="">Shoes Under 50$</a>
+            <a href="">Sale</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>SEASONAL SALES</h1>
+            <a href="">All clothes</a>
+            <a href="">T-shirts</a>
+            <a href="">Sweatshirts</a>
+            <a href="">Shorts</a>
+            <a href="">Pants</a>
+            <a href="">Tracksuits</a>
+            <a href="">Jackets</a>
+          </div>
+          <div class="oinasdjaslmadn">
+            <h1>FLASH SALES</h1>
+            <a href="">Socks</a>
+            <a href="">Underwear</a>
+            <a href="">Headwear</a>
+            <a href="">Bags And Backpacks</a>
+            <a href="">Sunglasses</a>
+            <a href="">Footwear Care</a>
+          </div>
+        </div>
+        <div class="baragastik">
+          <div class="baragastik-container">
+            <img src="images//sale.jpg" alt="Exploretheworld">
+            <a href="">BLACK FRIDAY 70% OFF FREE SHIPPING</a>
+          </div>
+        </div>
+      </div>
+
+        <div class="search-box">
+          <form action="">
+            <input class="sb-text" type="text" autofocus>
+            <button type="submit">→</button>
+          </form>
+        </div>
+
+
+        </div>
+
+        
+      
+      <div class="hero">
+        <div class="hero__overlay">
+          <div class="hero__overlay__feel-better">
+            <a class="button hero__overlay__feel-better__button" href="#">NEW COLLECTION</a>
+            <img src="images//feel-better-img6.png" alt="hero-feel-better">
+        </div>
+        <div class="hero__overlay__small-images">
+          <img src="images//hero-imgsmall1.jpg" alt="hero-small-img1">
+          <img src="images//hero-imgsmall2.jpg" alt="hero-small-img2">
+        </div>
+        </div>
+      </div>
+
+      <div class="street-shop">
+        <p class="tae-p">ADIDAS JORDAN <span>NEW BALANCE</span> <span>THE NORT FACE</span> SUPREME <span>BIG STAR  </span>CHAPION BAPE ELLESSE DICKIES BOSS CONVERGE DKNY GAPADIDAS JORDAN <span>NEW BALANCE</span> <span>THE NORT FACE</span> SUPREME <span>BIG STAR  </span>CHAPION BAPE ELLESSE DICKIES BOSS</p>
+        <div class="cont">
+          <h1 class="street-shop__title">
+            STREET <br> SHOP
+          </h1>
+          <p class="street-shop__paragraph">We sell various original streetwear brands at good prices. Surely everyone will find something for themselves. Every friday we organize an outlet for selected brands.</p>
+          <p class="street-shop__paragraph p2">99.9%</p>
+        </div>
+        <p class="tae-p">CONVERGE DKNY <span>BIG STAR</span> JORDAN  ELLESSE  SUPREME ADIDAS BOSS <span>NEW BALANCE</span>  CHAPION DICKIES  BAPE GAP DKNY  <span>BIG STAR</span> <span>THE NORT FACE</span>  JORDAN  ELLESSE  SUPREME ADIDAS BOSS <span>NEW BALANCE</span>  CHAPION DICKIES  BAPE GAP</p>
+      </div>
+      
+      <div class="colection">
+
+        <h1>THE COLLECTION</h1>
+        <div class="collection__container">
+          <div class="collection__container-1">
+              <img class="collection__container-1-normal" src="images//model-1.webp" alt="">
+              <img class="collection__container-1-normal" src="images//model-3.webp" alt="">
+              <img class="collection__container-1-normal" src="images//model-4.webp" alt="">
+           </div>
+            <div class="collection__container-1">
+              <img class="collection__container-1-normal"src="images//model-4.webp" alt="">
+              <img id="tae"  src="images//hahaha1-removebg-preview.png" alt="">
+              <img id="tae1"  src="images//hahaha-removebg-preview.png" alt="">
+            </div>
+        </div>
+      </div>
+
+      <div class="champion">
+        <div class="champion__texts">
+          <h1 class="opti ">CHAMPION</h1>
+          <p class="lota lota-p">The best t-shirt this season</p>
+          <p class="lota">You can wear the Crewneck T-shirt from the Champion Collection with any streetwear style. 
+          It is timeless design with a regular cut and round neckline. Thanks to the cotton fabric, you gain all-day.</p>
+          <a class="lota lota-a lota-a-btn">SHOP NOW</a>
+        </div>
+        <div class="champion__image">
+          <img src="images//champion-img.png" alt="">
+        </div>
+      </div>
+
+      <div class="collection__champion">
+
+        <h1 class="collection__champion__title">COLLECTION CHAMPION</h1>
+
+        <div class="collection__champion__container">
+          <div class="collection__champion__container-card">
+            <img src="images//damit-1.webp" alt="">
+            <h1>CHAMPION</h1>
+            <h1>PRINTED T-SHIRT</h1>
+            <p class="card__price">$ 20</p>
+  
+          </div>
+          <div class="collection__champion__container-card">
+            <img src="images//damit-2.webp" alt="">
+            <h1>CHAMPION</h1>
+            <h1>PRINTED T-SHIRT</h1>
+            <p class="card__price">$ 20</p>
+  
+          </div>
+          <div class="collection__champion__container-card">
+            <img src="images//damit-3.webp" alt="">
+            <h1>CHAMPION</h1>
+            <h1>PRINTED T-SHIRT</h1>
+            <p class="card__price">$ 20</p>
+  
+          </div>
+          <div class="collection__champion__container-card">
+            <img src="images//damit-4.webp" alt="">
+            <h1>CHAMPION</h1>
+            <h1>PRINTED T-SHIRT</h1>
+            <p class="card__price">$ 20</p>
+  
+          </div>
+          <div class="collection__champion__container-card">
+            <img src="images//damit-5.webp" alt="">
+            <h1>CHAMPION</h1>
+            <h1>PRINTED T-SHIRT</h1>
+            <p class="card__price">$ 20</p>
+  
+          </div>
+          <div class="collection__champion__container-card">
+            <img src="images//damit-6.webp" alt="">
+            <h1>CHAMPION</h1>
+            <h1>PRINTED T-SHIRT</h1>
+            <p class="card__price">$ 20</p>
+  
+          </div>
+          <div class="collection__champion__container-card">
+            <img src="images//damit-7.webp" alt="">
+            <h1>CHAMPION</h1>
+            <h1>PRINTED T-SHIRT</h1>
+            <p class="card__price">$ 20</p>
+  
+          </div>
+          <div class="collection__champion__container-card">
+            <img src="images//damit-8.webp" alt="">
+            <h1>CHAMPION</h1>
+            <h1>PRINTED T-SHIRT</h1>
+            <p class="card__price">$ 20</p>
+          </div>
+        </div>
+      </div>
+      <div class="subscribe">
+        <img class="sub-tshirt" src="images//champion-img.png" alt="">
+        <img class="sub-shoe" src="images//shoe1-removebg-preview.png" alt="">
+        <h1>SUBSCRIBE TO NEWSELLER</h1>
+        <p>BE THE FIRST TO GET INFORMATION ABOUT THE LATEST DROPS AND PROMOTIONS</p>
+        <form id="subscribeForm" action="">
+          <input class="subscribe__input" id="emailInput" placeholder="Email Adress" type="email">
+          <button class="subscribe__submit" id="email-submit" type="submit" disabled>SUBSCRIBE</button>
+        </form>
+        <div class="subscribed">
+          <h1>🎉  <span id="animated-text">SUBSCRIBED</span> 🎉</h1>
+        </div>
+      </div>
+      <div class="socials">
+        <h1>MEET US <br class="social-br"> ON INSTAGRAM</h1>
+        <p>TAG US ON INSTAGRAM @STREETSHOP TO BE THE SITE</p>
+        <div class="social-swipe">
+          <video src="images//KXZi4B9ZDA.webm" autoplay loop></video>
+        </div>
+        
+        <div class="socials__collage">
+          <div class="socials__collage-big-img">
+            <img src="images//social-img5.jpg" alt="">
+          </div>
+          <div class="hehe">
+            <div class="socials__collage-small-img">
+              <img src="images//social-img1.jpg" alt="">
+              <img src="images//insta-img (1).jpg" alt="">
+            </div>
+            <div class="socials__collage-small-img">
+              <img src="images//social-img3.jpg" alt="">
+              <img src="images//social-img4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="utot">
+            <div class="logo">
+              <a href="index2.html">
+                <img class="f-logo" src="images//official-logowhite.webp" alt="">
+              </a>
+            </div>
+            <div class="fixed-footer">
+              <div class="links">
+                <h1>PRODUCTS</h1>
+                <div class="dropdown">
+                  <p>Boots</p>
+                  <p>Clothes</p>
+                  <p>Accessories</p>
+                  <p>News</p>
+                  <p>Outlet</p>
+                  <p>Drops</p>
+                  <p>Most popular</p>
+                </div>
+              </div>
+            </div>
+            <div class="clickable-footer">
+              <div class="links">
+                <input class="check" id="check" type="checkbox">
+                <label for="check" class="check"><h1>PRODUCTS</h1></label>
+                <a for="check">
+                  <svg class="down" width="45px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z" fill="#505050"/> </g>
+                  </svg>
+                  <svg class="up" width="45px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7Z" fill="#505050"/>
+                  </svg>
+                </a>
+              </div>
+            <div class="dropdown">
+              <p>Boots</p>
+              <p>Clothes</p>
+              <p>Accessories</p>
+              <p>News</p>
+              <p>Outlet</p>
+              <p>Drops</p>
+              <p>Most popular</p>
+            </div>
+            </div>
+          <hr>
+            <div class="fixed-footer">
+              <div class="links">
+                <h1>RECOMMENDED</h1>
+                <div class="dropdown">
+                  <p>Nike</p>
+                  <p>Adidas</p>
+                  <p>Jordan</p>
+                  <p>Supreme</p>
+                  <p>Off - White</p>
+                  <p>The North Face</p>
+                </div>
+              </div>
+            </div>
+            <div class="clickable-footer">
+              <div class="links">
+                <input class="check" id="check1" type="checkbox">
+                <label for="check1" class="check"><h1>RECOMMENDED</h1></label>
+                <a for="check1" >
+                  <svg class="down" width="45px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z" fill="#505050"/> </g>
+                  </svg>
+                  <svg class="up" width="45px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7Z" fill="#505050"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="dropdown">
+                <p>Nike</p>
+                <p>Adidas</p>
+                <p>Jordan</p>
+                <p>Supreme</p>
+                <p>Off - White</p>
+                <p>The North Face</p>
+              </div>     
+            </div>
+          <hr>
+            <div class="fixed-footer">
+              <div class="links">
+                <h1>SUPPORT</h1>
+                <div class="dropdown">
+                  <p>Help</p>
+                  <p>Status of the order</p>
+                  <p>Shipping and Delivery</p>
+                  <p>Returns and refunds</p>
+                  <p>Payment options</p>
+                  <p>Size chart</p>
+                  <p>Contact us</p>
+                </div>
+              </div>
+            </div>
+            <div class="clickable-footer">
+              <div class="links">
+                <input class="check" id="check2" type="checkbox">
+                <label for="check2" class="check"><h1>SUPPORT</h1></label>
+                <a for="check2">
+                  <svg class="down" width="45px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z" fill="#505050"/> </g>
+                  </svg>
+                  <svg class="up" width="45px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7Z" fill="#505050"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="dropdown">
+                <p>Help</p>
+                <p>Status of the order</p>
+                <p>Shipping and Delivery</p>
+                <p>Returns and refunds</p>
+                <p>Payment options</p>
+                <p>Size chart</p>
+                <p>Contact us</p>
+               </div>
+            </div>
+          <hr>
+            <div class="fixed-footer">
+              <div class="links">
+                <h1>COMPANY</h1>
+                <div class="dropdown">
+                  <p>About us</p>
+                  <p>News</p>
+                  <p>Career</p>
+                  <p>Investors</p>
+                </div>
+              </div>
+            </div>
+            <div class="clickable-footer">
+              <div class="links">
+                <input class="check" id="check3" type="checkbox">
+                <label for="check3" class="check"><h1>COMPANY</h1></label>
+                <a href="#check3">
+                  <svg class="down" width="45px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z" fill="#505050"/> </g>
+                  </svg>
+                  <svg class="up" width="45px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7Z" fill="#505050"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="dropdown">
+                <p>About us</p>
+                <p>News</p>
+                <p>Career</p>
+                <p>Investors</p>
+              </div>
+            </div>
+          <hr>
+          <div class="apps">
+            <img src="images//appwhite-appstore.png" alt="">
+            <img src="images//appwhite-playstore.png" alt="">
+          </div>
+        </div>
+        <div class="f-text">
+          <p>© 2022 Steet Shop, All Rights Reserved</p>
+          <div class="f-text1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1024 1024"><path fill="currentColor" d="M1025.02 512c0-272.016-213.663-495.104-482.319-511.023c-5.536-.608-11.088-1.009-16.72-1.009c-1.664 0-3.328.176-4.992.224c-2.992-.048-5.968-.224-8.992-.224C229.117-.032-1.026 229.664-1.026 512s230.144 512.032 513.023 512.032c3.024 0 6-.176 9.008-.24c1.664.064 3.328.24 4.992.24c5.632 0 11.184-.4 16.72-1.009c268.64-15.92 482.304-238.976 482.303-511.023m-95.451 164.832c-17.632-5.12-61.92-16.24-140.064-25.392c6.464-44.192 10-90.896 10-139.44c0-38.256-2.208-75.343-6.288-111.008c99.008-11.824 142.384-26.72 145.296-27.745l-11.92-33.584c22.24 53.088 34.56 111.296 34.56 172.336c0 58.193-11.28 113.761-31.583 164.833zM285.488 512.001c0-35.808 2.37-70.77 6.705-104.401c51.888 4.08 113.936 7.088 186.863 7.792v222.064c-70.992.688-131.664 3.568-182.688 7.473c-7.04-42.193-10.88-86.88-10.88-132.928M542.945 68.223c78.464 22.736 145.648 131.695 175.744 276.111c-48.368 3.856-106.624 6.673-175.744 7.33zm-63.886.783V351.63c-68.368-.688-126.88-3.473-176.063-7.232C333.7 201.79 401.428 93.646 479.059 69.006m0 632.223l.001 253.743c-72.4-22.976-136.192-118.575-169.36-247.023c47.76-3.504 104.096-6.063 169.359-6.72m63.888 254.543l-.001-254.56c65.952.623 122.064 3.28 169.217 6.928c-32.608 130.128-96 226.416-169.216 247.632m-.001-318.32l.001-222.032c73.311-.688 134.991-3.776 186.191-8a844.922 844.922 0 0 1 6.496 104.592c0 46.128-3.712 90.864-10.528 133.12c-50.416-4.08-110.8-7.008-182.16-7.68m371.858-323.52c-9.664 3.008-50.063 14.48-131.023 24.032c-18.048-95.952-50.672-177.968-93.12-237.168C788.197 143.18 867.797 219.1 914.805 313.932zM358.82 90.589c-52.208 59.952-94.832 146.161-118.096 248.113c-72.48-7.856-115.921-17.089-133.312-21.281c50.72-104.64 141.04-186.752 251.408-226.832M83.637 377.182c12.32 3.344 58.913 14.941 145.553 24.525a795.86 795.86 0 0 0-7.68 110.305c0 48.273 4.368 94.721 12.24 138.688c-74.4 8.033-120.16 17.649-140.688 22.609c-19.44-50.096-30.208-104.447-30.208-161.312c0-46.96 7.312-92.256 20.783-134.815m37.457 355.166c23.264-4.944 64.912-12.464 126.592-18.928c24.288 89.712 63.792 165.616 111.136 219.968c-101.12-36.72-185.296-108.752-237.728-201.04M690.662 923.18c38.224-53.264 68.48-125.024 87.296-208.801c63.408 7.28 103.216 15.792 123.296 20.864c-48.016 83.072-121.855 149.393-210.592 187.937"/></svg>
+            <p>
+               English(US)
+            </p>
+            <p class="asuydgv">$ USD</p>
+            <img src="images//facebook (1).png" alt="">
+            <img src="images//instagram (1).png" alt="">
+          </div>
+        </div>
+      </div>
+      </footer>
+  </main>
+<script src="js.js">
+
+</script>
+</body>
+</html>
